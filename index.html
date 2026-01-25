@@ -246,7 +246,7 @@
                 <p class="text-zinc-400">We'll reach out within 24 hours to schedule your kickoff.</p>
             </div>
 
-            <form id="roa-form" class="space-y-5" onsubmit="event.preventDefault(); setTimeout(function(){window.location.href='thank-you.html';}, 500);">
+            <form id="roa-form" class="space-y-5">
                 <div class="grid md:grid-cols-2 gap-5">
                     <div>
                         <label class="block text-[10px] font-bold uppercase tracking-widest text-white mb-2">First Name</label>
@@ -311,6 +311,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- RevenueHero -->
+    <script type="text/javascript" src="https://assets.revenuehero.io/scheduler.min.js"></script>
+    <script type="text/javascript">
+      window.hero = new RevenueHero({ routerId: '4880' })
+      hero.schedule('#roa-form')
+    </script>
 
 </body>
 </html>
