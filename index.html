@@ -113,11 +113,29 @@
                     </div>
                 </div>
 
-                <p class="text-zinc-500 text-sm mb-6">
+                <p class="text-zinc-500 text-sm mb-8">
                     For B2B marketing teams spending $25K+/month on paid media.
                 </p>
+
+                <div class="flex items-center gap-6 mb-8 text-sm text-zinc-500">
+                    <div class="flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-full bg-brand-green text-white text-xs font-bold flex items-center justify-center">1</span>
+                        <span>Quick form</span>
+                    </div>
+                    <svg class="w-4 h-4 text-zinc-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    <div class="flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-full bg-zinc-200 text-zinc-600 text-xs font-bold flex items-center justify-center">2</span>
+                        <span>15-min fit call</span>
+                    </div>
+                    <svg class="w-4 h-4 text-zinc-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    <div class="flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-full bg-zinc-200 text-zinc-600 text-xs font-bold flex items-center justify-center">3</span>
+                        <span>Full diagnostic</span>
+                    </div>
+                </div>
+
                 <a href="#form" class="inline-flex items-center bg-brand-green text-white px-8 py-4 font-bold uppercase tracking-tight hover:bg-brand-green/90 transition-all group">
-                    See If This Is A Fit
+                    Start With The Form
                     <svg class="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                     </svg>
@@ -194,12 +212,21 @@
     <!-- What You Get -->
     <section class="py-20 border-b border-zinc-200">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="max-w-2xl mb-16">
-                <span class="text-brand-green text-[10px] font-bold uppercase tracking-widest mb-4 block">The Deliverable</span>
-                <h2 class="text-4xl md:text-5xl font-black tracking-tight mb-6 text-zinc-900">A 10-15 Slide Deck<br><span class="text-brand-green">You Can Reuse Internally.</span></h2>
-                <p class="text-zinc-600 leading-relaxed">
-                    Not a 50-page audit you'll never read. A focused diagnostic with specific findings you can present to leadership in 20 minutes.
-                </p>
+            <div class="grid md:grid-cols-2 gap-12 items-start mb-16">
+                <div>
+                    <span class="text-brand-green text-[10px] font-bold uppercase tracking-widest mb-4 block">The Deliverable</span>
+                    <h2 class="text-4xl md:text-5xl font-black tracking-tight mb-6 text-zinc-900">A 10-15 Slide Deck<br><span class="text-brand-green">You Can Reuse Internally.</span></h2>
+                    <p class="text-zinc-600 leading-relaxed mb-6">
+                        Not a 50-page audit you'll never read. A focused diagnostic with specific findings you can present to leadership in 20 minutes.
+                    </p>
+                    <p class="text-zinc-500 text-sm">
+                        Every slide contains specific observations from YOUR data — not generic best practices.
+                    </p>
+                </div>
+                <div class="bg-zinc-100 border border-zinc-200 p-4 shadow-lg">
+                    <img src="sample-slide.png" alt="Sample slide from Revenue Opportunity Analysis" class="w-full">
+                    <p class="text-zinc-500 text-xs mt-3 text-center">Sample slide — actual client data redacted</p>
+                </div>
             </div>
             <div class="grid grid-cols-2 gap-1 max-w-4xl mx-auto">
                 <div class="bg-zinc-900 border border-zinc-800 p-10 hover:bg-brand-green transition-all duration-300 group cursor-default flex flex-col justify-center">
@@ -369,7 +396,8 @@
             <div class="text-center mb-12">
                 <span class="text-brand-green text-[10px] font-bold uppercase tracking-widest mb-4 block">Next Step</span>
                 <h2 class="text-3xl md:text-4xl font-black tracking-tight mb-4 text-white">See If This Is A Fit</h2>
-                <p class="text-zinc-400">Tell us a bit about your situation. We'll reach out within 24 hours.</p>
+                <p class="text-zinc-400 mb-6">Not every company is a fit. Tell us about your situation and we'll let you know if this makes sense for you.</p>
+                <p class="text-zinc-500 text-sm">We review every request personally — no auto-responses.</p>
             </div>
 
             <form id="roa-form" class="space-y-5">
