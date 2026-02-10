@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { TheProblem } from './components/TheProblem';
@@ -26,6 +27,7 @@ const App: React.FC = () => {
         <FormSection />
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 };
